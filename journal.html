@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mood Tracker</title>
+    <link rel="stylesheet" href="journal-style.css">
+</head>
+<body>
+    <div id="mood-tracker" class="container">
+        <h1>My Daily Journal</h1>
+        <div id="mood-selector">
+            <div>
+                <h2>How are you feeling today?</h2>
+            </div>
+            <br>
+            <div>
+                <div class="mood-option happy" data-mood="happy">&#128512;</div>
+                <div class="mood-option calm" data-mood="calm">&#128523;</div>
+                <div class="mood-option neutral" data-mood="neutral">&#128528;</div>
+                <div class="mood-option sad" data-mood="sad">&#128532;</div>
+                <div class="mood-option angry" data-mood="angry">&#128545;</div>
+            </div>
+        </div>
+        <div id="weather-selector">
+            <div>
+                <h2>How's the weather today?</h2>
+            </div>
+            <br>
+            <div>
+                <div class="weather-option sunny" data-weather="sunny">&#9728;</div>
+                <div class="weather-option cloudy" data-weather="cloudy">&#9729;</div>
+                <div class="weather-option rainy" data-weather="rainy">&#9730;</div>
+                <div class="weather-option snowy" data-weather="snowy">&#10052;</div>
+                <div class="weather-option stormy" data-weather="stormy">&#9889;</div>
+            </div>
+        </div>
+
+        <div id="people-selector">
+            <div>
+                <h2>Who are you with?</h2>
+            </div>
+            <br>
+            <div>
+                <div class="people-option friends" data-people="friends">👫</div>
+                <div class="people-option family" data-people="family">👪</div>
+                <div class="people-option partner" data-people="partner">❤️</div>
+                <div class="people-option others" data-people="others">👥</div>
+                <div class="people-option none" data-people="none">🚶‍♂️</div>
+            </div>
+        </div>
+
+        <div id="emotions-selector">
+            <div>
+                <h2>What emotions are you experiencing?</h2>
+            </div>
+            <br>
+            <div>
+                <div class="emotion-option joy" data-emotion="joy">&#128513;</div>
+                <div class="emotion-option love" data-emotion="love">&#128525;</div>
+                <div class="emotion-option laughter" data-emotion="laughter">&#128514;</div>
+                <div class="emotion-option surprise" data-emotion="surprise">&#128558;</div>
+                <div class="emotion-option sadness" data-emotion="sadness">&#128546;</div>
+                <div class="emotion-option anger" data-emotion="anger">&#128544;</div>
+                <div class="emotion-option fear" data-emotion="fear">&#128561;</div>
+                <div class="emotion-option disgust" data-emotion="disgust">&#128534;</div>
+                <div class="emotion-option relief" data-emotion="relief">&#128516;</div>
+                <div class="emotion-option contentment" data-emotion="contentment">&#128578;</div>
+                <div class="emotion-option gratitude" data-emotion="gratitude">&#129392;</div>
+                <div class="emotion-option admiration" data-emotion="admiration">&#128525;</div>
+                <div class="emotion-option pride" data-emotion="pride">&#128516;</div>
+                <div class="emotion-option guilt" data-emotion="guilt">&#128553;</div>
+                <div class="emotion-option shame" data-emotion="shame">&#128550;</div>
+            </div>
+        </div>
+        
+        <!-- For Image Upload -->
+        <div id="image-upload">
+            <h2>Upload Picture</h2>
+            <input type="file" accept="image/*" id="file-input">
+            <button id="camera-button">Capture from Camera</button>
+            <div id="uploaded-image-container">
+                <img id="uploaded-image" alt="Uploaded Image"><br>
+                <button id="delete-button">Delete</button>
+            </div>
+            <br>
+        </div>
+        
+
+
+        <textarea id="notes" placeholder="Optional: Add a short note about your day..."></textarea>
+        <button id="save-button">Save Mood</button>
+        <div id="mood-history">
+            <h2>Mood History (Today)</h2>
+            <ul id="mood-list"></ul>
+        </div>
+    </div>
+
+
+    <script src="journal-script.js"></script>
+</body>
+</html>
+
+
